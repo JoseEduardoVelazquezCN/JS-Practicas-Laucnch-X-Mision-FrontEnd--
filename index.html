@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex LaunchX</title>
     <link rel="stylesheet" href="/assets/css/style.css">
-
+    <!--icono pestaña navegador-->
+    <link rel="shortcut icon" href="/assets/img/pokeball.png" />
     <!--iconos-->
     <script src="https://kit.fontawesome.com/a9902e7eaf.js" crossorigin="anonymous"></script>
     <!--https://fontawesome.com/search?q=check&o=r&m=free-->
@@ -16,27 +17,41 @@
 <body>
     <section class="header">
         <h1 class="titulo">Pokedex LaunchX</h1>
+        <h3>By: JEVCN</h3>
         <a href="https://github.com/JoseEduardoVelazquezCN" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/eduardo-velázquez-45069b1a4" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/eduardo-velázquez-45069b1a4" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
     </section>
 
-    
-    <input type="text" placeholder="Id/Nombre POKEMON" id="pokeName" name="pokeName">
-    <img src="./assets/img/pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
-    <button onclick="fetchPokemon()">Buscar Pokemon</button>
-    <!--Datos generales-->
-    <p class="idPokemon" id="idPokemon"></p>
-    <p class="nombre" id="nombre"></p>
-    <p class="type" id="type"></p>
-    <p class="weightPokemon" id="weightPokemon"></p>
-    <!--abilities-->
-    <p class="abilities" id="abilities"></p>
-    <!--<p class="estadisticas" id="estadisticas"></p>-->
-    <div class="estadisticas" id="estadisticas">
+    <section class="pokedex">
+        <div class="entrada">
+            <p>Busca tu pokemon</p>
+            <hr>
+            <input type="text" placeholder="Id/Nombre" id="pokeName" name="pokeName"><i
+                class="fa-solid fa-magnifying-glass" onclick="fetchPokemon()"></i>
+        </div>
+        <!--<div class="buscar">
+            <button onclick="fetchPokemon()">Buscar Pokemon</button>
+        </div>-->
+        <div class="img-pokemon">
+            <img src="./assets/img/pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+        </div>
 
-    </div>
+        <!--Datos generales-->
+        <div class="datospokemon" id="datospokemon" style="display:none">
+            <p class="idPokemon" id="idPokemon"></p>
+            <p class="nombre" id="nombre"></p>
+            <p class="type" id="type"></p>
+            <p class="weightPokemon" id="weightPokemon"></p>
+            <p class="abilities" id="abilities"></p>
+            <!--<p class="estadisticas" id="estadisticas"></p>-->
+            <div class="estadisticas" id="estadisticas">
+                <!--Aqui se imprimen las estadisticas del pokemon-->
+            </div>
+            <p class="error" id="error" style="display:none"> Pokemon no encontrado :,(</p>
+        </div>
 
-    <p class="error" id="error" style="display:none"> Pokemon no encontrado</p>
+    </section>
 </body>
 <footer>
     <script src="./assets/pokedex.js"></script>

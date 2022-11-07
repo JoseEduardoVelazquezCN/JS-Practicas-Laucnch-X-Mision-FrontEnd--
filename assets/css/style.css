@@ -1,21 +1,26 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
+
     background-color: aliceblue;
     font-family: 'Pokemon Solid', sans-serif;
 }
 
-.header{
+/*<section class="header"> INICIO*/
+.header {
     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
-.header .titulo{
+
+.header .titulo {
     width: 100%;
     font-size: 80px;
     font-weight: bolder;
@@ -24,16 +29,220 @@ body{
     -webkit-text-stroke: 2px #3761a8;
     color: #feca1b;
 }
-.header a i{
+
+.header h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 1.5px #3761a8;
+    color: #feca1b;
+    background-color: rgba(240, 248, 255, 0.148);
+}
+
+.header a i {
     width: 100%;
     font-size: 45px;
     text-align: center;
     margin-right: 20px;
     color: #3761a8;
 }
-.header a i:hover{
+
+.header a i:hover {
     width: 100%;
     font-size: 45px;
     text-align: center;
     color: #feca1b;
 }
+
+@media only screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .header .titulo {
+        width: 100%;
+        font-size: 60px;
+        font-weight: bolder;
+        text-align: center;
+        letter-spacing: 6px;
+        -webkit-text-stroke: 4px #3761a8;
+        color: #feca1b;
+    }
+
+    .header h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 5px;
+        -webkit-text-stroke: 1.5px #3761a8;
+        color: #feca1b;
+    }
+
+    .header a i {
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 10px;
+        color: #3761a8;
+    }
+
+    .header a i:hover {
+        width: 100%;
+        font-size: 45px;
+        text-align: center;
+        color: #feca1b;
+    }
+}
+
+/*<section class="header"> FIN*/
+
+
+/*<section class="podedex"> INICIO*/
+.pokedex {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.pokedex .entrada {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokedex .entrada input {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    max-width: 500px;
+    border: 3px solid #3761a8;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.pokedex .entrada p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.pokedex .entrada input:focus {
+    border: 3px solid #3761a8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 0 #feca1b;
+    outline: 0 none;
+}
+
+.pokedex .entrada i {
+    margin-left: 5px;
+    padding: 10px;
+    background-color: #3761a8;
+    color: #feca1b;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.pokedex .entrada i:hover {
+    background-color: #feca1b;
+    color: #3761a8;
+}
+
+.pokedex .buscar {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokedex .buscar button {
+    text-align: center;
+    padding: 10px;
+    margin-top: 11px;
+}
+
+.pokedex .img-pokemon {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokedex .img-pokemon img {
+    width: 25%;
+    margin-top: 10px;
+}
+.pokedex .datospokemon{
+    width: 100%;
+    max-width: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+.pokedex .datospokemon .estadisticas h4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.pokedex .datospokemon .estadisticas p{
+    color: #3761a8;
+}
+.pokedex .datospokemon .estadisticas h5{
+    color: #3761a8;
+    font-weight: bolder;
+    padding-left: 15px;
+}
+.pokedex .datospokemon .error{
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .pokedex .img-pokemon {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .pokedex .img-pokemon img {
+        width: 45%;
+    }
+    .pokedex .datospokemon{
+        width: 100%;
+        max-width: 300px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+}
+/*<section class="podedex"> FIN*/
