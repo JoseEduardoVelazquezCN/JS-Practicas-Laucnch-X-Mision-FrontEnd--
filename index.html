@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/a9902e7eaf.js" crossorigin="anonymous"></script>
+    <!--https://fontawesome.com/search?q=check&o=r&m=free-->
+</head>
+
+<body>
+    <section class="header">
+        <h1 class="titulo">Pokedex LaunchX</h1>
+        <a href="https://github.com/JoseEduardoVelazquezCN" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/eduardo-velázquez-45069b1a4" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </section>
+
+    
+    <input type="text" placeholder="Id/Nombre POKEMON" id="pokeName" name="pokeName">
+    <img src="./assets/img/pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+    <button onclick="fetchPokemon()">Buscar Pokemon</button>
+    <!--Datos generales-->
+    <p class="idPokemon" id="idPokemon"></p>
+    <p class="nombre" id="nombre"></p>
+    <p class="type" id="type"></p>
+    <p class="weightPokemon" id="weightPokemon"></p>
+    <!--abilities-->
+    <p class="abilities" id="abilities"></p>
+    <!--<p class="estadisticas" id="estadisticas"></p>-->
+    <div class="estadisticas" id="estadisticas">
+
+    </div>
+
+    <p class="error" id="error" style="display:none"> Pokemon no encontrado</p>
+</body>
+<footer>
+    <script src="./assets/pokedex.js"></script>
+</footer>
+
+</html>
